@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email-template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<style>
+body{
+    width:100%;
+    height:100%;
+}
+.max_content_width {
+  max-width: 1440px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:100%;
+    height: 90vh;;
+    background-color: #FFFFFF;
+    border:1px solid black;
+    position: relative;
+    justify-content: space-between;
+
+}
+.header{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+
+}
+.header-row{
+    display: flex;
+    flex-direction: row;
+}
+.red-box{
+    display: flex;
+    position: absolute;
+    top:30px;
+    left:0;
+}
+.header-left{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:6px;
+    padding-left:2rem;
+
+}
+.label-style{
+    color:#1D1D1E;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    
+}
+
+.header-right{
+  margin-top: 30px;
+  padding-right:3rem;
+
+
+    
+}
+
+.content-box{
+width:100% ;
+height:fit-content;
+display: flex;
+flex-direction: column;
+gap:10px;
+
+}
+.content-head{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1D1D1E;
+}
+span{
+    color:#E32A2B;
+}
+.content{
+    padding-right: 6rem;
+}
+.content-label{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+   line-height: 26px;
+   color: #1D1D1E;
+}
+.footer-main{
+    display: flex;
+    flex-direction: column;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.footer-para{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #969696;
+    align-items: center;
+}
+
+.separator{
+        display:flex;
+        align-items: center;
+}
+
+       .separator .line{
+        height: 1px;
+        flex: 2;
+       background-color:gray;
+}
+
+.separator img{
+  padding: 0 1rem;
+}
+
+</style>
+<body>
+<div class="max_content_width container">
+    <!-- --Header-- -->
+    <div class="header ">
+        <div class="header-row">
+            <div class="red-box">
+            <img src="img/red-box.svg" alt="">
+            </div>
+        <div class="header-left">
+             <!-- <label class="label-style">0484 2992327</label> -->
+             <label class="label-style">info@flycatchtech.com</label>
+        </div>
+        </div>
+        <div class="header-right ">
+        <img src="img/flycatch-logo.svg" alt="flycatch-logo">
+        </div>
+    </div>
+   <!-- ---Content-- -->
+   <div class=" max_content_width content-box">
+    <label class="content-head">Hi Nithin,</label>
+    <p class="content content-label">Thanks for reaching out to Flycatch.We have received your enquiry
+         regarding our services.We are pleased to inform you that one of our team
+         members will be assisting you soon to serve you effectively.For more
+          information,please visit us at <span>www.flycatchtech.com</span> </p>
+          <label class="content-label">Sincerely,</label>
+          <label class="content-label">Team Flycatch.</label>
+   </div>
+
+   <!-- ---footer-- -->
+   <div class="max_content_width footer-main ">
+    <div class="separator">
+        <div class="line"></div>
+        <img src="img/Linkedin.svg" alt="">
+       <img src="img/instagram.svg" alt="">
+       <img src="img/facebook.svg" alt="">
+        <div class="line"></div>
+      </div>
+   <div>
+    <p class="footer-para">Adamstar Building, Building No.16/3579, 2nd Floor, Kalangattu Road, Kakkanad, Kerala 682030</p>
+   </div>
+</div>
+
+</div>
+</body>
+</html>
